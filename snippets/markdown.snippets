@@ -85,3 +85,16 @@ snippet pullquote
 	{% pullquote %}
 	${1:text} {" ${2:quote} "} ${3:text}
 	{% endpullquote %}
+snippet post
+	---
+	layout: post
+	title: ${1}
+	status: publish
+	type: post
+	date: ${2}
+	tags:
+	- ${3}
+	- ${4}
+	---
+
+	${5}
